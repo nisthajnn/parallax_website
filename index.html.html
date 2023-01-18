@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 10px;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            height: 100%;
+            z-index: -1;
+        }
+
+        h1 {
+            position: absolute;
+            top: 5rem;
+            left: 50%;
+            font-size: 10rem;
+            color: white;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transform: translateX(-50%);
+            letter-spacing: 4px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .background {
+            transform: translateZ(-50px) scale(6);
+        }
+
+        .foreground {
+            transform: translateZ(-30px) scale(4);
+        }
+        .text
+        {
+            font-size: 1.5rem;
+            padding: 0 10rem;
+            margin: 5rem 0;
+        }
+        .background,
+        .foreground {
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        section
+        {
+            background-color: rgb(45, 45,45);
+            color: white;
+            padding: 5rem 0;
+        }
+        .bg
+        {
+            width: 100%;
+            height: 500px;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+        .bg2
+        {
+            background-image: url("sport-1.jpg");
+        }
+        .bg3
+        {
+            background-image: url("sport-2.jpg");
+        }
+        .bg4
+        {
+            background-image: url("sport-3.jpg");
+        }
+        .desc
+        {
+            background-color: white;
+            color:black;
+            font-size: 3.5rem;
+            padding: 0.5rem 2.5rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-weight: 600;
+        }
+        .secheading
+        {
+            font-size: 5rem;
+            padding: 0 10rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img src="background.png" alt="no image" class="background">
+            <img src="foreground.png" alt="no image" class="foreground">
+            <h1>ADVENTURE</h1>
+        </div>
+        <section>
+            <h2 class="secheading">Adventure Time !</h2>
+                <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus optio similique consequuntur maiores perferendis esse voluptatibus? Inventore magni neque placeat? Debitis non veritatis, incidunt autem aperiam facilis quia adipisci culpa recusandae modi ipsam in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat laborum adipisci quis vel ducimus, maiores enim quas eaque aperiam nobis possimus nam! A ipsa eius magni accusantium quaerat assumenda, sapiente pariatur! Tenetur, laudantium voluptates.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo quidem odit dolor omnis exercitationem recusandae laborum magnam perspiciatis est, tenetur temporibus earum blanditiis nobis quisquam? Eius libero dolor aperiam similique dolore cum cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dignissimos voluptatem totam maxime nemo! Velit, et nihil quos, consequatur perspiciatis aspernatur aperiam suscipit commodi officiis animi est cumque id in dolore vitae possimus veritatis.
+                </p>
+                <div class="bg bg2">
+            <h2 class="desc">BIKING</h2>
+        </div>
+                <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus optio similique consequuntur maiores perferendis esse voluptatibus? Inventore magni neque placeat? Debitis non veritatis, incidunt autem aperiam facilis quia adipisci culpa recusandae modi ipsam in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat laborum adipisci quis vel ducimus, maiores enim quas eaque aperiam nobis possimus nam! A ipsa eius magni accusantium quaerat assumenda, sapiente pariatur! Tenetur, laudantium voluptates.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo quidem odit dolor omnis exercitationem recusandae laborum magnam perspiciatis est, tenetur temporibus earum blanditiis nobis quisquam? Eius libero dolor aperiam similique dolore cum cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dignissimos voluptatem totam maxime nemo! Velit, et nihil quos, consequatur perspiciatis aspernatur aperiam suscipit commodi officiis animi est cumque id in dolore vitae possimus veritatis.
+                </p>
+                <div class=" bg bg3">
+            <h2 class="desc">PARA GLIDING</h2>
+        </div>
+                <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus optio similique consequuntur maiores perferendis esse voluptatibus? Inventore magni neque placeat? Debitis non veritatis, incidunt autem aperiam facilis quia adipisci culpa recusandae modi ipsam in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat laborum adipisci quis vel ducimus, maiores enim quas eaque aperiam nobis possimus nam! A ipsa eius magni accusantium quaerat assumenda, sapiente pariatur! Tenetur, laudantium voluptates.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo quidem odit dolor omnis exercitationem recusandae laborum magnam perspiciatis est, tenetur temporibus earum blanditiis nobis quisquam? Eius libero dolor aperiam similique dolore cum cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dignissimos voluptatem totam maxime nemo! Velit, et nihil quos, consequatur perspiciatis aspernatur aperiam suscipit commodi officiis animi est cumque id in dolore vitae possimus veritatis.
+                </p>
+                <div class=" bg bg4">
+            <h2 class="desc">SURFING</h2>
+        </div>
+                <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus optio similique consequuntur maiores perferendis esse voluptatibus? Inventore magni neque placeat? Debitis non veritatis, incidunt autem aperiam facilis quia adipisci culpa recusandae modi ipsam in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat laborum adipisci quis vel ducimus, maiores enim quas eaque aperiam nobis possimus nam! A ipsa eius magni accusantium quaerat assumenda, sapiente pariatur! Tenetur, laudantium voluptates.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo quidem odit dolor omnis exercitationem recusandae laborum magnam perspiciatis est, tenetur temporibus earum blanditiis nobis quisquam? Eius libero dolor aperiam similique dolore cum cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dignissimos voluptatem totam maxime nemo! Velit, et nihil quos, consequatur perspiciatis aspernatur aperiam suscipit commodi officiis animi est cumque id in dolore vitae possimus veritatis.
+                </p>
+        </section>
+    </div>
+</body>
+
+</html>
